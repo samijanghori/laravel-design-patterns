@@ -1,0 +1,21 @@
+App
+|
+|--> Http
+|   |   
+|   |-->controllers
+|   |   |
+|   |   |->Todocontroller   
+|
+|--> Interfaces
+|     |-> todoInterface
+| 
+|
+|-->Repositories
+    |->todoRepository
+|
+|
+|
+|-->Services
+|  |
+|  |->TodoService
+|

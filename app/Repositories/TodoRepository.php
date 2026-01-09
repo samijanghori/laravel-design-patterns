@@ -17,10 +17,7 @@ class TodoRepository implements TodoInterface
             return Todo::all();
             
         }
-    function saveTodo($request){
-       return Todo::create([
-            'title' => $request->title ,
-            'description' => $request->description
-        ]);
+    function saveTodo($todoRequest){
+       return Todo::create($todoRequest);
     }
 }

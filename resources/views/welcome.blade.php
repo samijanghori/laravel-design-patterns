@@ -48,3 +48,14 @@
 
 </body>
 </html>
+Controller → Repository Interface → Repository
+
+- **Controller:** Handles HTTP requests and responses  
+- **Repository Interface:** Defines the contract for data operations  
+- **Repository:** Implements the interface using Eloquent ORM  
+- **Model:** Represents the Todo entity
+
+---
+
+## 📂 Project Structure
+

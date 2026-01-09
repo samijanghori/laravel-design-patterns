@@ -2,10 +2,48 @@
 
 @section('content')
 <div class="container mt-5">
+
+    {{-- ===== Page Header ===== --}}
+    <div class="row mb-5">
+        <div class="col">
+            <div class="card border-0 shadow-lg">
+                <div
+                    class="card-body text-center py-5"
+                    style="background: linear-gradient(135deg, #0d6efd, #6610f2); color: #fff; border-radius: 12px;"
+                >
+
+                    <div class="mb-3">
+                        <span class="badge bg-light text-primary px-3 py-2 fw-semibold">
+                            Laravel Architecture
+                        </span>
+                    </div>
+
+                    <h1 class="fw-bold mb-3">
+                        Repository + Service Design Pattern
+                    </h1>
+
+                    <p class="mb-4 opacity-75 fs-5">
+                        Clean Architecture for Managing Business Logic in Laravel
+                    </p>
+
+                    <div class="d-flex justify-content-center gap-2 flex-wrap">
+                        <span class="badge bg-dark px-3 py-2">Controller</span>
+                        <span class="badge bg-dark px-3 py-2">Service</span>
+                        <span class="badge bg-dark px-3 py-2">Repository</span>
+                        <span class="badge bg-dark px-3 py-2">Model</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- ===== End Header ===== --}}
+
     <div class="row justify-content-center">
 
-        {{-- Form --}}
+        {{-- ===== Todo Form ===== --}}
         <div class="col-xl-5 col-lg-6 col-md-8 mb-4">
+
             {{-- Alerts --}}
             @if (session('success'))
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -62,8 +100,9 @@
                 </div>
             </div>
         </div>
+        {{-- ===== End Form ===== --}}
 
-        {{-- Todo List --}}
+        {{-- ===== Todo List ===== --}}
         <div class="col-xl-7 col-lg-8 col-md-12">
             <div class="card shadow-sm">
                 <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
@@ -104,6 +143,7 @@
                 </div>
             </div>
         </div>
+        {{-- ===== End List ===== --}}
 
     </div>
 </div>
